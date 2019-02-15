@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder - Express</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!--------------------------------------------------->
+    <div class="container">
+        <h2><b>Survey Questions</b></h2>
+        <a href="/"><button type="button" class="btn btn-success">
+                <h4><i class="fas fa-home" aria-hidden="true"></i> Go Home</h4>
+            </button></a>
+        <hr>
+
+        <h3><b>About You</b></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="image-link" class="form-control" required>
+        <hr>
+        <!--------------------------------------------------->
+        <h3><b>Question 1:</b></h3>
+        <h4>You'll try any kind of food once.</h4>
+        <select class="chosen-select" id="ques1">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 2:</b></h3>
+        <h4>You believe in aliens</h4>
+        <select class="chosen-select" id="ques2">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 3:</b></h3>
+        <h4>You can watch scary movies at home alone</h4>
+        <select class="chosen-select" id="ques3">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 4:</b></h3>
+        <h4>You're a dog & cat person</h4>
+        <select class="chosen-select" id="ques4">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 5:</b></h3>
+        <h4>You prefer Batman to Superman</h4>
+        <select class="chosen-select" id="ques5">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 6:</b></h3>
+        <h4>You're NOT a morning person</h4>
+        <select class="chosen-select" id="ques6">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 7:</b></h3>
+        <h4>You dont iron t-shirts</h4>
+        <select class="chosen-select" id="ques7">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 8:</b></h3>
+        <h4>You enjoy roller-coasters</h4>
+        <select class="chosen-select" id="ques8">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 9:</b></h3>
+        <h4>You wait for a friend to order the Uber/Lfyt first</h4>
+        <select class="chosen-select" id="ques9">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3><b>Question 10:</b></h3>
+        <h4>You look great in shorts</h4>
+        <select class="chosen-select" id="ques10">
+            <option value="" disabled="disabled" selected="selected">Select an Option 1-5</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <br>
+        <button type="submit" class="btn btn-success btn-lg btn-block" id="submit">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Submit
+        </button>
+        <hr>
+        <!--------------------------------------------------->
+        <footer class="footer mt-4">
+            <div class="container">
+                <a href="/api/friends">API Friends List</a>
+                |
+                <a href="https://github.com/GrrrRocks/Friend-Finder">GitHub Repo</a>
+            </div>
+        </footer>
+        <!--------------------------------------------------->
+        <div id="results-modal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h7 class="modal-title">Best Match</h7>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchIMG" width="650" src="https://via.placeholder.com/350x150" alt="placeholder">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------->
+    </div>
+
+<script type="text/javascript">
+
+    let match;
+    let matchSum = [];
+
+
+    $("#submit").on("click", function (showFriend) {
+        showFriend.preventDefault();
+
+
+        
+
+
+
+        function validateForm() {
+            let formFilled = true;
+            $(".form-control").each(function () { //--this makes sure the form inputs are filled with valid text 
+                if ($(this).val() === "") {
+                    // console.log($(this).val());
+                    formFilled = false;
+                }
+            });
+
+            $(".chosen.select").each(function () { //--this makes sure each of the selection options are chosen before submitting 
+                if ($(this).val() === "") {
+                    // console.log($(this).val());
+                    formFilled = false;
+                }
+            });
+            return formFilled;
+        }
+
+        let surveyInput = { //--this gets the data back from the survey the user filled out & shows their selections
+            name: $("#name").val().trim(),
+            photo: $("#image-link").val().trim(),
+            scores: [
+                $("#ques1").val(),
+                $("#ques2").val(),
+                $("#ques3").val(),
+                $("#ques4").val(),
+                $("#ques5").val(),
+                $("#ques6").val(),
+                $("#ques7").val(),
+                $("#ques8").val(),
+                $("#ques9").val(),
+                $("#ques10").val()
+            ]
+        };
+        let surveyScore = $.map(surveyInput.scores, Number);
+        let surveySum = surveyScore.reduce(add, 0); //--this hold the survey total score
+        function add(a, b) { //--this function adds the survey score to get the sum
+            return a + b;
+        }
+        console.log("survey score total: " + surveySum);
+        // console.log(surveyInput.scores);
+
+        match[0].diff = Math.abs(match[0].arraySum - surveySum);
+        let resultMatch = match[0];
+        // console.log(resultMatch);
+        console.log(match); //--this shows the friends array object, their score totals & the difference from the survey total
+
+        for (let i = 0; i < match.length; i++) {
+            match[i].diff = Math.abs(match[i].arraySum - surveySum);
+            console.log(match[i].diff); //--this log shows the difference between the survey total score & the friends array score totals
+            matchSum.push(match[i].diff);
+            // console.log(resultMatch);
+        };
+
+        console.log('THIS IS THE LOWEST VALUE: ', Math.min(...matchSum));
+        var FRIEND = matchSum.indexOf(Math.min(...matchSum));
+        console.log("INDEX OF YOUR FRIEND: ", FRIEND);
+        console.log(`THIS IS YOUR NEW FRIEND:` + match[FRIEND]);
+
+        $("#matchName").text(match[FRIEND].name);
+        $("#matchIMG").attr("img", match[FRIEND].img);
+        $("#results-modal").modal("toggle");
+    });
+
+
+    $.ajax({ url: "/api/friends", method: "GET" }).then(function (friendArray) { //--this gets the data from the friends.js file
+        match = [];
+        for (let i = 0; i < friendArray.length; i++) { //--this loops thru the friends array to gather their score data
+            // console.log("friend scores: " + friendArray[i].scores);
+            let friendScore = $.map(friendArray[i].scores, Number);
+            // console.log(friendScore);
+            let arraySum = friendScore.reduce(add, 0); //--this hold the friends total score
+            function add(a, b) { //--this function adds the friends score to get the sum
+                return a + b;
+            }
+            // console.log("friends score total: " + arraySum);
+            friendArray[i].arraySum = arraySum;
+            match.push(friendArray[i]);
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
